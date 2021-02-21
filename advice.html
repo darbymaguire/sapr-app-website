@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>USNA SAPR Department</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3" style='text-shadow:  1px 1px 8px white'><span style='color:  navy; opacity:0.6;'>BLUE & GOLD </span> <span style='color: #009999'> & TEAL</span></span>
+    <span class="mainHead site-heading-lower">USNA SAPR Department</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="resources.html">Response</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="prevention.html">Prevention</a>
+          </li>          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="advice.html">Advice</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="contact-us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section about-heading">
+    <div class="container">
+      <img class="center-fit sapr-main-image" src="img/SAPRO-Masterhead-4.jpg" alt="sapr masterhead 4">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <div class="page-header">
+                  <h1 class="section-heading-lower">What Should I Do? </h1>
+                  <h3 class="section-heading-upper" style="padding-top:30px">Are you or a friend in a hard situation and you don't know what to do? </h3><h3 class="section-header-upper"> Use this simple quiz to get started in the right direction.</h3>
+                </div>
+              </h2>
+              <section class="advice-quiz">
+                <!-- The following code, as well as the quiz portion of the CSS and the javascript code, for this quiz comes from Sarah at Codepen: https://codepen.io/snacey/pen/ROVNwM and has been adapted to be relevant to our capstone project and fit the website's theme-->
+                <div id="fb-root"></div>
+                <div class="container text-center content">
+                  <div id="start-box">
+                    <button class="btn btn-primary btn-lg" onclick="start()" id="start-button">
+                      <span class="glyphicon glyphicon-play"></span> START
+                    </button>
+                  </div>
+                  <div id="question-box">
+                    <p id="step" class="lead"></p><p id="question" class="mb-0 lead"></p>
+                    <div id="buttons-box">
+                      <button onclick="answer('yes')" class="btn btn-primary btn-lg">
+                        <span class="mb-0 glyphicon glyphicon-ok"></span> Yes
+                      </button>
+                      <button onclick="answer('no')" class="btn btn-primary btn-lg">
+                        <span class="mb-0 glyphicon glyphicon-remove"></span> No
+                      </button>
+                    </div>
+                    <!-- <div class="alert alert-danger" role="alert" id="drop-msg">
+                      <h3><span class="mb-0 glyphicon glyphicon-thumbs-down"></span> Drop it!</h3>
+                    </div>
+                    <div class="alert alert-success" role="alert" id="ask-msg">
+                      <span class="mb-0 glyphicon glyphicon-thumbs-up"></span> Oh, that's strange! You should probably start a startup.
+                    </div> -->
+                    <div class="alert alert-info mb-0" role="alert" id="talk-msg">
+                        <!-- <h2 class="mb-0">You should...</h2> -->
+                        <h3 class="talk-teams mb-0" id="talk-teams"></h3>
+                        <button class="btn btn-primary" onClick="history.go(0)" id="refresh-button">
+                            <span class="mb-0 glyphicon glyphicon-refresh"></span> RESTART
+                        </button>
+                    </div>
+                  </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+                    <script src="./js/script.js"></script>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Need to help a friend?</span>
+              <span class="section-heading-lower">How to help a loved one guide</span>
+            </h2>
+            <p class="mb-0">If you have a friend or family member who has been sexually assaulted, read this <a href = "help_a_friend.pdf">guide</a> to learn more about how you can best help them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <!-- <p class="m-0 small" style="color:navy">Copyright &copy; Maguire 2020</p> -->
+      <a href="https://www.safehelpline.org/"><img style="float:left; padding-bottom:50px; width:130px; height:auto; transform: translate(0, -37px);" src="img/safehelpline.jpg" alt="safe help line"></a>
+      <p class="m-0 small" style="color:#006666; padding:0; margin:0">Harris, Hernandez, Hirth, Hove, Johnson, Maguire 2020 </p>
+      <a href="https://www.sapr.mil"><img style="float:right; padding-bottom:50px; width:200px; height:auto; transform: translate(80px, -60px);" src="img/SAPR-LOGO.png" alt="sapr"></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+</body>
+
+</html>
